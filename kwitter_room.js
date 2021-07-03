@@ -44,3 +44,10 @@ function redirectToRoomName (name)
 names = localStorage.getItem("user_name");
 document.getElementById("input").innerHTML = names;
 console.log(names)
+
+function logout()
+{
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("room_name");
+  window.location = "index.html";
+}
